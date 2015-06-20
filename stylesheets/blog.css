@@ -1,0 +1,21 @@
+main h2{
+  font-size:38px;
+}
+main h4{
+  text-align:center;
+}
+#content{
+    text-align: justify;
+    font-size: 20px;
+    line-height: 1cm;
+    margin-left: 10em;
+    margin-right:10em;
+}
+footer img{
+    display: inline;}
+footer h2{
+  text-align:center;
+}
+#facebook{
+  margin-left:30em;
+}
