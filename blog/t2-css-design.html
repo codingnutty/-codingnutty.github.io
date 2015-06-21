@@ -17,12 +17,40 @@
           <li><a href="getintouch.html">Get In Touch</a></li>
    </header>
 <main>
-  <h2>CSS-position:elements</h2>
+  <h2>CSS-positioning:elements</h2>
   <h4>June 20,2015</h4>
 
   <section id="content">
     <p>
+      Web Design has been greatly simplified due to CSS.The positioning declarations are highly necessary to have complete control over styling a document using CSS.
+      Each part of the document can be considered as an element that can be positioned at any part of the page using absolute, relative , fixed type of positioning. There is static and inherit too.
+      There are four positioning properties that enable the position vlaues to set an object at a particular location:
+      <ol>
+        <li>top</li>
+        <li>right</li>
+        <li>bottom</li>
+        <li>left</li>
+      </ol>
+      These behave as offset properties.An element positioned right: 2em is not moved to the right by 2em. It's right side is offset from the right side of the window by 2em. The same is true for the other three.
     </p>
+    <p>
+      position:static; - Every elements default position is static. The commands left, right, top and bottom have no effect on static as seen in the image below. This value is used only when there is a requirement to reset the value back to static from some other position value.</p>
+      <p id="static"><img src="https://github.com/codingnutty/codingnutty.github.io/blob/master/imgs/static.png"></p>
+      <p id="static-code1"><img src="https://github.com/codingnutty/codingnutty.github.io/blob/master/imgs/static-code1.png"></p>
+    <p>
+      Relative and Absolute are the most confusing values. It is easy to mix them up. <br>
+      position:relative; - This actually means relative to itself. This will have an effect only if the top, right , left or bottom values are set. For example if one sets the top value as top:10px; when the position is set to relative, the element will shift 10 pixels down from its normal or original position.Here, the element is within the flow os the document.</p>
+      <p id="relative"><img src="https://github.com/codingnutty/codingnutty.github.io/blob/master/imgs/relative.png"></p>
+      <p id="relative-code"><img src="https://github.com/codingnutty/codingnutty.github.io/blob/master/imgs/relative-code.png"></p>
+    <p>position:absolute; - This value enables us to place an element anywhere we wish to on the page. The element is removed from the flow of document and placed anywhere.Without the width property set, the elements can be stretched as wide or as tall as the content in it using the left,right,top, bottom commands. setting all four to 0 will stretch the element tot he entire screen.This positioning style does not have any influence on other elements and are not influenced by others either. This can help the flexibility of the site majorly.</p>
+    <p id="absolute"><img src="https://github.com/codingnutty/codingnutty.github.io/blob/master/imgs/absolute.png"></p>
+    <p id="absolute-code"><img src="https://github.com/codingnutty/codingnutty.github.io/blob/master/imgs/absolute-code.png"></p>
+    <p>position:fixed; - This fixes an object to the window at a particular location. The object will not move even while scrolling. If one needs a footer to remain at the bottom come what may and not move, fixed positioning will help.</p>
+    <p> The below figure provides a quick view of all four position attributes in one.</p>
+      <p id="all"><img src="https://github.com/codingnutty/codingnutty.github.io/blob/master/imgs/all.png"></p>
+      <p id="all-code"><img src="https://github.com/codingnutty/codingnutty.github.io/blob/master/imgs/all-code.png"></p>
+
+
   </section>
 </main>
  <footer>
