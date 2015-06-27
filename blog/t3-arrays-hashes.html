@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+  <title>t3-git-blog</title>
+  <meta charset="UTF-8">
+   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/t3-blog.css">
+</head>
+<body>
+    <header>
+      <h1>Arrays and Hashes in Ruby</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">About Me</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="../blog_index.html">Blog</a></li>
+          <li><a href="getintouch.html">Get In Touch</a></li>
+        </ul>
+      </nav>
+   </header>
+<main>
+  <h2>Working with a group of elements</h2>
+  <h4>June 26,2015</h4>
+
+  <section id="content">
+    <p>
+     It is almost the end of Phase0- Week-3. This entire week provided a superb kick-start to Ruby. Learnt to work with Ruby variables, perform some basic ruby functions and looping. Futher, we also dove into the concepts of arrays, hashes and iterating through them.I am going to try and explain Arrays and Hashes the way I understood it best.</p>
+     <p>
+     Both arrays and hashes make a program smaller and easy to function. They both can contain any type of an object(integer, float, string etc..). Let's delve further into understanding them individually.
+    </p>
+    <p>
+     <h1> Arrays</h1>
+     Arrays are ordered, indexed collection of object. It is a way to temporarily group and refer to variables. For example if we had two baskets of apples. We name basket-1 sweet and  basket-2 sour. So, basket-2 contains a group of sour apples or an array of sour apples. Each apple in this basket will have a position number that it holds in the basket to enable easy referencing.
+     <br>
+     Why do we need arrays?<br>
+     They help read and analyze repetitive data with minimum coding. For example: If we had a file in your computer that contains 24 temperature values in celcius for each hour of the day nd we want to convert each value to fahrenheit. We would have to individually access each value and convert it. Considering we have arrays, we can form an array of temperature values and apply the same formula to all at once. It makes work a lot easier.
+     <br>There are many ways to create an array.Couple of methods are listed below:
+    </p>
+    <div>
+    <p>
+      <code> temperature_c = Array.new</code> <span>#=> [] empty array</span>
+    </p>
+    <p>
+      <code> temperature_c.new(4)</code> <span> #=> [nil, nil,nil,nil]</span>
+    </p>
+    <p>
+    <code>temperature_c = [50,40,65,80,90,100]</code> <span>#=> enter temperature values into the array</span>
+    </p>
+    <span>#Access elements in an array using its index</span>
+    <p>
+     <code> puts temperature_c [3]</code><span> #=> 65</span>
+     </p>
+    <span> One can create an array within an array as well</span>
+    <p>
+      <code> arr = [1,2,3,4,[5,6,7],[8,9,10]]</code>
+    </p>
+    <p>
+      <code> arr[4] </code><span> #=> [5,6,7] </span>
+    </p>
+  </div>
+    <p>
+      Some common methods used in an array are: push, pop, shift, unshift, reverse, size, include?, index, delete, concat, count
+    </p>
+    <h1> Hashes </h1>
+    Hashes are conceptually similar to dictionaries if anyone has worked with other programming languages. They map one object(the key) to another object (the value) in a one-to-one relationship. Hashes are unordered and cannot be accessed using indexes. A value can be accessed using its key. an example of a key value pair is the SSN number of each individual. A bank can look up a person using his or her SSN number. Here the SSN-number is the key and the individual associated to that SSN-number is the value.
+   </p>
+   <p>
+   When defining a Hash, one must specify each entry using Key => value syntax.
+   </p>
+   <div>
+   <p>
+    <code> citizens = {
+                       'xxx-yyy-zzz' => 'Brian',
+                       'aaa-bbb-ccc' => 'Mark',
+                       'mmm-nnn-ooo' => 'Nancy',
+                       } </code>
+   </p>
+   <p>
+    <code> citizens['xxx-yyy-zzz']</code>
+    <br>
+    <span> => "Brian"</span>
+   </p>
+ </div>
+  </section>
+</main>
+ <footer>
+      <h2>Connect with me on</h2>
+      <a href="https://www.facebook.com/nruthya"><img src="http://soundchildcare.org/wp-content/uploads/2014/04/Like-Us-On-Face-Book-Seattle-Sound-Child-Care-Solutions.png" id="facebook">
+      </a>
+      <a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile"><img src="http://file1.hpage.com/004649/62/bilder/l0.png" id="linkdin"/>
+      </a>
+      <a href="https://twitter.com/Nutty2687?lang=en"><img src="http://johansaputra.com/wp-content/uploads/2015/01/twitter-logo.png" id="twitter"/>
+      </a>
+      <a href="https://github.com/codingnutty"><img src="http://img.freepik.com/free-photo/github-character-silhouette_318-40485.png?size=318&ext=png" id ="github"/>
+      </a>
+      <a href="mailto:nruthy2687@gmail.com"><img src="http://www.clker.com/cliparts/0/6/8/3/12065629431871551574qubodup_16x16px-capable_black_and_white_icons_10.svg.med.png" id="email"/></a>
+      </footer>
+</body>
+</html>
