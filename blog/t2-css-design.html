@@ -26,26 +26,26 @@
   <section id="content">
     <p>
       Web Design has been greatly simplified due to CSS.The positioning declarations are highly necessary to have complete control over styling a document using CSS.
-      Each part of the document can be considered as an element that can be positioned at any part of the page using absolute, relative , fixed type of positioning. There is static and inherit too.
-      There are four positioning properties that enable the position vlaues to set an object at a particular location:
+      We use CSS positioning to place parts of your webpage at a desired location. There are different positioning commands used for this. Each part of the document can be considered as an object that can be positioned at any part of the page using absolute, relative , fixed type of positioning. There is static and inherit too.
+      There are four other positioning properties that enable the position vlaues to set an object at a particular location:
       <ol>
         <li>top</li>
         <li>right</li>
         <li>bottom</li>
         <li>left</li>
       </ol>
-      These behave as offset properties.An element positioned right: 2em is not moved to the right by 2em. It's right side is offset from the right side of the window by 2em. The same is true for the other three.
+      These behave as offset properties. An element positioned right: 2em is not moved to the right by 2em. It's right side is offset from the right side of the window by 2em. The same is true for the other three.
     </p>
     <p>
-      position:static; - Every elements default position is static. The commands left, right, top and bottom have no effect on static as seen in the image below. This value is used only when there is a requirement to reset the value back to static from some other position value.</p>
+      position:static; - Every elements default position is static. The commands left, right, top and bottom have no effect on static as seen in the image below. This value is used only when there is a requirement to reset the object back to static from someother position value.For example: In the picture below, the position is set to static and there are values provided to top, left positioning elements but that has no effect on the div block.They remain stationed at their default location which is as seen in the picture. </p>
       <p class="static"><img src="../imgs/static.png?raw=true"/></p>
       <p class="static"><img src="../imgs/static-code1.png?raw=true"/></p>
     <p>
       Relative and Absolute are the most confusing values. It is easy to mix them up. <br>
-      position:relative; - This actually means relative to itself. This will have an effect only if the top, right , left or bottom values are set. For example if one sets the top value as top:10px; when the position is set to relative, the element will shift 10 pixels down from its normal or current  position.Here, the element is within the flow of the document.</p>
+      position:relative; - This actually means relative to itself. This will have an effect only if the top, right , left or bottom values are set. For example if one sets the top value as top:10px; when the position is set to relative, the element will shift 10 pixels down from its normal or current  position.Here, the element is within the flow of the document. For example, in the figure below, div 1 and div 2 has been provided a top value of 20px. The blocks have moved 20px down from their original position as seen in the previous figure above.Also, div2 is placed below div1 and it dose not consider this offset from the top margin of the page but it considers its margin as its previous top value.  </p>
       <p class="relative"><img src="../imgs/relative.png"/></p>
       <p class="relative"><img src="../imgs/relative-code.png"/></p>
-    <p>position:absolute; - This value enables us to place an element anywhere we wish to on the page. For example if one sets the top value as top:10px; when the position is set to absolute, the element will shift 10 pixels down from the page or window top edge.The element is removed from the flow of document and placed anywhere.Without the width property set, the elements can be stretched as wide or as tall as the content in it using the left,right,top, bottom commands. Setting all four to 0 will stretch the element tot he entire screen.This positioning style does not have any influence on other elements and are not influenced by others either. This can help the flexibility of the site.</p>
+    <p>position:absolute; - This value enables us to place an element anywhere we wish to on the page. For example if one sets the top value as top:10px; when the position is set to absolute, the element will shift 10 pixels down from the page or window top edge.The element is removed from the flow of document and placed anywhere.Without the width property set, the elements can be stretched as wide or as tall as the content in it using the left,right,top, bottom commands. Setting all four to 0 will stretch the element tot he entire screen.This positioning style does not have any influence on other elements and are not influenced by others either. This can help the flexibility of the site. For example:div 3 here is set to absolute and its top value is the same as div1 and div2 as seen in the above figure but div3 is on in flow with div1 and div2 its removed from its place below div2 and its placed relative to the top margin of the page. So, it moved 20px down from top margin of the page and not the top margin of this previous position or relative to div2. Hence its removed from the flow.</p>
     <p class="absolute"><img src="../imgs/absolute.png"/></p>
     <p class="absolute"><img src="../imgs/absolute-code.png"/></p>
     <p>position:fixed; - This fixes an object to the window at a particular location. The object will not move even while scrolling. If one needs a footer to remain at the bottom come what may and not move, fixed positioning will help.</p>
