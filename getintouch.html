@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset ="UTF-8">
+    <title>My Website</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/contact.css">
+  </head>
+  <body>
+    <header>
+      <h1>Get in Touch with me</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">About Me</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blog_index.html">Blog</a></li>
+          <li>Get In Touch</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="wrapbox">
+    <div id="main" style="padding:20px 0 0 0">
+    <form id="contact-form" action="/" method="post">
+        <h3>Get in touch</h3>
+        <h4>Fill in the form below, and I will try and get back to you within 24 hours</h4>
+        <div>
+                <label>
+                        <span>Name: (required)</span>
+                        <input placeholder="Please enter your name" type="text" tabindex="1" required autofocus>
+                </label>
+        </div>
+        <div>
+                <label>
+                        <span>Email: (required)</span>
+                        <input placeholder="Please enter your email address" type="email" tabindex="2" required>
+                </label>
+        </div>
+        <div>
+                <label>
+                        <span>Telephone: (required)</span>
+                        <input placeholder="Please enter your number" type="tel" tabindex="3" required>
+                </label>
+        </div>
+        <div>
+                <label>
+                        <span>Website</span>
+                        <input placeholder="Begin with http://" type="url" tabindex="4">
+                </label>
+        </div>
+        <div>
+                <label>
+                        <span>Message: (required)</span>
+                        <textarea placeholder="Include all the details you can" tabindex="5" required></textarea>
+                </label>
+        </div>
+        <div>
+                <button name="submit" type="submit" id="contact-submit">Send Email</button>
+        </div>
+</form>
+<script>
+(function() {
+
+    // Create input element for testing
+    var input = document.createElement('input');
+
+    // Create the check object
+    var check = {};
+
+    check.autofocus   = 'autofocus' in input;
+    check.required    = 'required' in input;
+    check.placeholder = 'placeholder' in input;
+
+    // Fallback for autofocus attribute
+    if(!check.autofocus) {
+
+    }
+
+    // Fallback for required attribute
+    if(!check.required) {
+
+    }
+
+    // Fallback for placeholder attribute
+    if(!check.placeholder) {
+
+    }
+
+})();
+
+</script>
+
+    <footer>
+      <h2>Connect with me on</h2>
+      <a href="https://www.facebook.com/nruthya"><img src="http://soundchildcare.org/wp-content/uploads/2014/04/Like-Us-On-Face-Book-Seattle-Sound-Child-Care-Solutions.png">
+      </a>
+      <a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile"><img src="http://file1.hpage.com/004649/62/bilder/l0.png" id="facebook"/>
+      </a>
+      <a href="https://twitter.com/Nutty2687?lang=en"><img src="http://johansaputra.com/wp-content/uploads/2015/01/twitter-logo.png" id="twitter"/>
+      </a>
+      <a href="https://github.com/codingnutty"><img src="http://img.freepik.com/free-photo/github-character-silhouette_318-40485.png?size=318&ext=png" id ="github"/>
+      </a>
+      <a href="mailto:nruthy2687@gmail.com"><img src="http://www.clker.com/cliparts/0/6/8/3/12065629431871551574qubodup_16x16px-capable_black_and_white_icons_10.svg.med.png" id="email"/></a>
+      </footer>
+
+ </body>
+</html>
