@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-      <h1>Ruby Explained! Enumerating Enumerable:</h1>
+      <h1>Ruby Explained- Enumerating Enumerable:</h1>
       <nav>
         <ul>
           <li><a href="../index.html">About Me</a></li>
@@ -20,7 +20,7 @@
       </nav>
    </header>
 <main>
-  <h2>Enumerable#map/Enumerable#collect</h2>
+  <h2>Enumerable#map/#collect</h2>
   <h4>July 09,2015</h4>
 
   <section id="content">
@@ -29,7 +29,7 @@
      <p>
      What is the difference between map and collect methods? is a question that often raises amongst we beginner ruby programmers.They are pretty much the same.map is implemented in C which is the low level language that is more readable to the machine as rb_ary_collect and enum_collect. The C level implementation of the 2 methods is a true explanation why they are same. Refer collect and map on <a href http://apidock.com/ruby/Array>API Docs</a>.
     </p>
-    <h1>#collect/#Map on Arrays
+    <h1>#collect/#map on Arrays</h1>
     <p>
       Lets us understand  what is returned when a block is provided and when it is not.
       <ol>
@@ -42,15 +42,16 @@
     </p>
     <div>
     <p>
-      <code> a = [1,11,22,33,44,55,66,77,88,99]</code> <span>#=> [1,11,22,33,44,55,66,77,88,99]</span>
+      <code> a = [1,11,22,33,44,55,66,77,88,99]</code><br> <span>#=> [1,11,22,33,44,55,66,77,88,99]</span>
     </p>
     <p>
-      <code> b = a.collect{|num| num.even?}</code> <span> #=> [false,false,true,false,true,false,true,false,true,false]</span>
+      <code> b = a.collect{|num| num.even?}</code><br> <span> #=> [false,false,true,false,true,false,true,false,true,false]</span>
     </p>
     <p>
-    <code>c = a.map{|num| num.even?}</code> <span> #=> [false,false,true,false,true,false,true,false,true,false]</span>
+    <code>c = a.map{|num| num.even?}</code><br> <span> #=> [false,false,true,false,true,false,true,false,true,false]</span>
     </p>
-    <h1> #collect/#Map on Hashes </h1>
+  </div>
+    <h1> #collect/#map on Hashes </h1>
     <p>
      When map and collect methods are used on a hash and a block is a provided, they pass each key-value pair through the block and returns - an array containing a set of two-item arrays, one for each key value pair, arr[0] being key and arr[1] being value of each array. This method can be used to convert hashes to arrays.
    </p>
@@ -73,6 +74,7 @@
  <p>
   In Ruby difference between collect and map does not exist.C level implementation of these methods shows that they both are same. Collect is an alias to Map
  <br>  Hope this helped!
+</p>
   </section>
 </main>
  <footer>
