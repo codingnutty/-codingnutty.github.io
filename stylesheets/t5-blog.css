@@ -1,0 +1,18 @@
+pre{
+    font-family: 'Inconsolata';
+    color: black;
+    margin-left:3em;
+    display:inline-block;
+    padding: 1em 1em;
+/*    background: #616161;*/
+    background-color:rgba(0,0,0,0.3);
+    position:relative;
+    width : 42em;
+   }
+
+span{
+  background-color:rgba(0,0,0,0.3);
+  font-family: 'Inconsolata';
+  color: black;
+  margin-left:10px;
+   }

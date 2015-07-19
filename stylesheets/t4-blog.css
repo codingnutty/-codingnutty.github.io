@@ -3,6 +3,7 @@ code{
   font-family: 'Inconsolata';
   color: white;
   margin-left:10px;
+  display:inline-block;
 }
 
 span{

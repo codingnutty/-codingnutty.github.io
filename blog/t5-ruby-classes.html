@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<head>
+  <title>t5-git-blog</title>
+  <meta charset="UTF-8">
+   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/t5-blog.css">
+</head>
+<body>
+    <header>
+      <h1>Ruby Classes</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">About Me</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="../blog_index.html">Blog</a></li>
+          <li><a href="getintouch.html">Get In Touch</a></li>
+        </ul>
+      </nav>
+   </header>
+<main>
+  <h2>Modeling a real world object</h2>
+  <h4>July 18,2015</h4>
+
+  <section id="content">
+    <p>
+      Ruby is known to be one of the most powerful object oriented languages(OOP). A newbie may wonder what object oriented programming is? It is a programming model based on the concept that everything around you is an object. An object in programming can be a variable, a datastucture or a function. For example, When one says Brian is speaking. Brian here is an object who performs the function of speaking. This can be translated into a programming paradigm.In OOP there exists a class. A class is considered as a code-template for creating these objects,providing some values to them and implementation of their behaviour(function). Think about a modern digital camera as an object.  You take pictures with it - it captures images and stores them.  They also let you do things with the stored images, like cropping and stitching.  The object camera, can be represented as classes.You construct a class by writing what looks a lot like an outline.  There are rules that you must follow to write this outline in the Ruby language and many other languages. In computer programming these rules are called the language's syntax. For a larger real world example, A bank account can be considered as a class, The attributes or values in it can be considered as the Account Number,Bank name, Owner Name, Account Balance etc and the operations or functions to be performed are Withdraw, Deposit, Generate Statement. The class bank account handles all of these within it and enables a cleaner environment for operations to take palce.
+    </p>
+     <p>
+      Okay! Now that we have got a basic idea of what classes are, lets delve into what classes have. We have learned that classes are objects as objects are way to represent a class. Each object can have a class and instance variables. Before you question what an instance variable is? To put all of this into perspective let us consider an example.
+    </p>
+    <p>
+      Consider an Animal. We can create an object called Animal1,which is considered as creating an instance of class Animal. Animal1 has some properties like type, gender and food preference. What are the functions it performs? It can walk and eat. So let us consider a class Animal. One can declare a class using the "class" keyword.</p>
+      <pre>
+        class Animal
+        end</pre>
+
+    <p>
+      Let us now set instance variables for the class. Each variable will be the properties that animal1 embodies. Each instantiated object in a class can store different values into these variables. Every instance of a <strong>class Animal</strong> will have certain properties like we discussed above. The variables will have an @ sign in front of them which denotes that it an instance variable. </p>
+    <p>
+    <pre>
+         class Animal
+                @type = nil
+                @gender = nil
+                @size = nil
+         end
+    </pre>
+    </p>
+     <p>Note that the name of the class begins with a capital letter. This is usually the denotation for the class name.</p>
+    <p>
+      Setting these variables to nil does not provide any value to the object created. So in order for the object to access these properties, we need to use a constructor method or function which contructs these properties. Here the constructor method is called Initialize. As the name says it initialized the instance variables for the object to catch in order to perform required functions.
+    <pre>
+            class Animal
+                def initialize(type,gender,food_pref)
+                    @type = type
+                    @gender = gender
+                    @food_pref = food_pref
+                end
+            end
+    </pre><br>
+      The above code assigns the object specific values passed while creating the object to these instance variables.
+    </p>
+    <p>
+     Now that we have the properties set, we need to set the funtions performed by this animal. The funtions performed by the animal are walking and eating.
+    </p>
+   <p>
+   <pre>
+           class Animal
+                def initialize(type,gender,food_pref)
+                    @type = type
+                    @gender = gender
+                    @food_pref = food_pref
+                end
+
+                def walking
+                   puts "The #{@gender} #{@type} is walking in the park."
+                end
+
+                def eating
+                   puts "The #{@gender} #{@type} likes to eat #{@food_pref}."
+                end
+           end
+    </pre>
+   </p>
+   In order for these method to function we need to create an object for this class and pass values that can be stored in the instance variables.These values are called arguments. Note that this class requires 3 arguments to be passed as there are 3 variables waiting to accept them. An arument error is raised if there insufficient number of arguments are passed while creating a new object.
+   </p>
+   <pre>
+      animal1 = Animal.new("Dog","male","meat")
+      animal1.walking <span> => "The male Dog is walking in the park." </span>
+      animal1.eating <span> => "The male Dog likes to eat meat." </span>
+      animal2 = Animal.new("cat","female","mouse")
+      animal2.walking <span> => "The female cat is walking in the park." </span>
+      animal2.eating <span> => "The female cat likes to eat mouse." </span>
+   </pre>
+
+ <p>
+  I hope the above examples have provided a clear understanding of the uses of a class. I was able to create and store properties for 2 different animals that paerform the same function. The class here provided a platform for the animals to perform the fucntions.
+</p>
+
+<p> Hope this helped. One can use this example as a platform to represent interaction of real world objects via ruby code.</p>
+</section>
+</main>
+ <footer>
+      <h2>Connect with me on</h2>
+      <a href="https://www.facebook.com/nruthya"><img src="http://soundchildcare.org/wp-content/uploads/2014/04/Like-Us-On-Face-Book-Seattle-Sound-Child-Care-Solutions.png" id="facebook">
+      </a>
+      <a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile"><img src="http://file1.hpage.com/004649/62/bilder/l0.png" id="linkdin"/>
+      </a>
+      <a href="https://twitter.com/Nutty2687?lang=en"><img src="http://johansaputra.com/wp-content/uploads/2015/01/twitter-logo.png" id="twitter"/>
+      </a>
+      <a href="https://github.com/codingnutty"><img src="http://img.freepik.com/free-photo/github-character-silhouette_318-40485.png?size=318&ext=png" id ="github"/>
+      </a>
+      <a href="mailto:nruthy2687@gmail.com"><img src="http://www.clker.com/cliparts/0/6/8/3/12065629431871551574qubodup_16x16px-capable_black_and_white_icons_10.svg.med.png" id="email"/></a>
+      </footer>
+</body>
+</html>
