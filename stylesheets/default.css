@@ -10,27 +10,6 @@ header h1{
     font-family: 'Kaushan Script', cursive;
     color:white;
 }
-body{
-    background-color:#F0F4C3;
-}
-
-body img{
-    width: 13em;
-    height: 13em;
-}
-
-#image1{
-  top: 380px;
-  left:20px;
-  position:absolute;
-}
-
-#image2{
-  top:160px;
-  left: 20px;
-  position:absolute;
-}
-
 
 header ul{
     padding: 10px;
@@ -73,10 +52,17 @@ footer {
 }
 
 footer h2{
-  text-align:left;
+  text-align:center;
   font-size:30px;
 }
 footer img{
   height:5em;
   width:5em;
+  display: inline;
 }
+
+#facebook{
+  margin-left:30em;
+}
+
+
