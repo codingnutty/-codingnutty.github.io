@@ -1,68 +1,111 @@
-header{
-  text-align: center;
-  font-color: white;
-  font-family: 'Kaushan Script', cursive;
-  background-color:#616161;
-}
-header h1{
-    display: inline;
-    font-size: 50px;
-    font-family: 'Kaushan Script', cursive;
-    color:white;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'EB Garamond', serif;
 }
 
-header ul{
-    padding: 10px;
-    background: rgba(0,0,0,0.5);
-    color:white;
+html {
+  background: #ECEFF1;
 }
 
-header li{
-    display: inline;
-    padding:0 30px 0 30px;
-    font-size: 30px;
+
+/* Header */
+
+header ul {
+  list-style-type: none;
+  float:right;
+  margin: 40px 15px 0px 0px;
+  font-size:20px;
+  font-family: 'EB Garamond', serif;
 }
-header a{
-    color: white;
+
+
+header li {
+  display:inline-block;
+  margin-left: 15px;
 }
-body h2{
-  text-align: center;
-  font-family: 'Lobster', cursive;
+
+header a {
+  text-decoration: none;
+  color: #263238;
 }
-section{
+
+
+header h1 {
+  display: inline-block;
+  color: #263238;
+  margin-left: 10px;
+  font-size:30px;
+  font-family: 'EB Garamond', serif;
+}
+
+header {
+  background: url("http://images.clipartof.com/thumbnails/1312769-Clipart-Of-A-Pattern-Background-Of-Ferns-Forming-Diamonds-On-Green-Royalty-Free-Illustration.jpg?raw=true");
+  height: 70px;
+  -moz-box-shadow: 0 0 10px #35404f;
+  -webkit-box-shadow: 0 0 10px #35404f;
+  box-shadow: 0 0 10px #35404f;
+  font-family: 'EB Garamond', serif;
+}
+
+
+/*body*/
+
+section {
+  font-size: 18px;
+  padding-right: 1em;
+  font-family: 'EB Garamond', serif;
+}
+/*section{
   margin-left:30%;
   margin-right:10%;
-}
+}*/
 .main {
     text-align: justify;
     font-size: 20px;
     line-height: 1cm;
-    float:left;
 }
-  h2 {
+  /*h2 {
     font-size: 20px;
     margin: 20px 0 30px 0;
     text-align: center;
     font-family: 'Lobster', cursive;
-}
+}*/
+
+/* Footer */
 
 footer {
   clear:both;
-  bottom:0px;
+  width:100%;
 }
 
-footer h2{
-  text-align:center;
-  font-size:30px;
-}
-footer img{
-  height:5em;
-  width:5em;
-  display: inline;
+footer h3 {
+  color: #f6f5f2;
+  /*font-family: Open Sans Condensed;*/
+  font-family: 'EB Garamond', serif;
+  margin: 5px auto auto 5px;
 }
 
-#facebook{
-  margin-left:30em;
+footer ul {
+  list-style-type: none;
+  text-align: center;
 }
+
+footer li {
+  display: inline-block;
+}
+
+footer img {
+  opacity: 0.85;
+  margin: auto 15px 10px 15px;
+  float:none;
+}
+
+footer p {
+  text-align: center;
+  color: #7acccc;
+}
+
+
+
 
 

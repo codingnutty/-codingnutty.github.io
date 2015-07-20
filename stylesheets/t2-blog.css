@@ -1,21 +1,21 @@
 .static{
   display:inline-block;
   position:relative;
-  left:8.5em;
+  left:3em;
 }
 .relative{
   display:inline-block;
   position:relative;
-  left:8.5em;
+  left:2em;
 
 }
 .absolute{
 display:inline-block;
 position:relative;
-left:8.5em;
+left:2em;
 }
 .all{
   display:inline-block;
   position:relative;
-  left:8.5em;
+  left:2em;
 }
