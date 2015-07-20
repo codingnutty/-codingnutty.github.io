@@ -1,6 +1,6 @@
 
 body{
-    background :url("http://www.glamoray.com/images/bg.jpg?raw=true");
+    background :url("http://codingnutty.github.io/imgs/bg.jpg?raw=true");
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -76,9 +76,12 @@ footer {
 }
 
 footer h3 {
-  color: #f6f5f2;
+  color: black;
   font-family: 'EB Garamond', serif;
   margin: 5px auto auto 5px;
+  font-size:30px;
+  text-align: center;
+
 }
 
 footer ul {
@@ -91,7 +94,6 @@ footer li {
 }
 
 footer img {
-  opacity: 0.85;
   margin: auto 15px 10px 15px;
   float:none;
 }
