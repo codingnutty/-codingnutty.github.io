@@ -39,8 +39,11 @@ header h1 {
 }
 
 header {
-  background: url("http://codingnutty.github.io/imgs/header.jpg?raw=true");
-  height: 70px;
+  background: url("https://danielalozza.files.wordpress.com/2011/06/cropped-header2.jpg?raw=true");
+
+
+  height: 90px;
+  width:cover;
   -moz-box-shadow: 0 0 10px #35404f;
   -webkit-box-shadow: 0 0 10px #35404f;
   box-shadow: 0 0 10px #35404f;
