@@ -1,0 +1,52 @@
+
+/* body */
+
+body .background{
+  margin-left: 18em;
+  margin-right:18em;
+  margin-top:0px;
+  position:relative;
+
+}
+
+body #content{
+  top:5em;
+  left:20em;
+  position:absolute;
+}
+
+#content h3{
+  font-size:40px;
+  text-align: center;
+}
+
+body #maintext{
+  top:-2em;
+  position:relative;
+}
+
+h6{
+  font-size:20px;
+}
+
+#overview{
+  top:-25px;
+  position:relative;
+}
+
+div #section{
+  top:-2em;
+  position:relative;
+}
+.heading{
+  font-size:20px;
+}
+
+
+body{
+  background :url("https://newevolutiondesigns.com/images/freebies/colorful-background-1.jpg?raw=true");
+  background-size:cover;
+}
+
+
+

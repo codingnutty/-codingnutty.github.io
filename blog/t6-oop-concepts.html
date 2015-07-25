@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<head>
+  <title>t6-oop-concepts-blog</title>
+  <meta charset="UTF-8">
+  <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/t6-blog.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html"><h1>Nruthya L</h1></a>
+        <ul>
+          <li><a href ="../aboutme.html">About Me</a></li>
+          <li><a href="../resume.html">Resume</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../blog_index.html">Blog</a></li>
+          <li><a href="../getintouch.html">Get In Touch</a></li>
+        </ul>
+
+     </header>
+<main>
+  <h2>Object Oriented Programming concepts</h2>
+  <h2>Variable Scope</h2>
+  <h4>July 24,2015</h4>
+
+  <section id="content">
+    <p>
+       Before I go on to today's topic on OOP concept of Variable scope I would like to briefly touch on what OOP terms of class, object and instance are to better understand how variables work in OOP. An object is a software bundle of related state and behavior. A class is a blueprint or prototype from which objects are created. An instance is a single and unique unit of a class. We have a blueprint (class) represents student (object) with fields like name, age, course (class member or variables). And we have 2 students here, Nelly and Nector. So, Nelly and Nector are 2 different instances of the class (Student class) that represent object (Student people). Still muddy?? lets illustrate with a better example.</p>
+    <p> Let's say you bought some chairs from ikea and you are building them.</p>
+
+    <p> Class => The diagram that shows how to build a chair and put it together corresponds to a software class.</p>
+
+    <p> Object => Let's say you build five chairs according to the pattern in that diagram. Likewise, you could construct five software objects according to the pattern in a class.</p>
+
+    <p> Instance => Each chair has a unique number burned into the bottom of the seat to identify each specific chair. Chair 3 is one instance of a chair object. Likewise, memory location 3 can contain one instance of a software object.</p>
+
+    </p>So, an instance (chair 3) is a single unique, specific representation of an object (a chair).<p>
+    <p>Here we are going to talk about variables and their scope in an OOP paradigm. Well don't get too overwhelmed, its not as wierd as it sounds. Here it goes..
+    </p>
+    <h1>What are Variables? </h1>
+    <p>
+      In computer programming, a variable is a<strong> storage location in the memory</strong> which has a descriptive name (an identifier) and contains some known or unknown quantity of information referred to as a value. It is helpful to think of variables as containers that hold information.Their sole purpose is to label and store data in memory.
+    </p>
+    <h1> Types of variable </h1>
+     <p>
+      There are 5 types of variables.
+      <table style="width:100%">
+  <tr>
+    <td>constant</td>
+    <td>[A-Z]-capital letters only</td>
+    <td>available throughout application</td>
+  </tr>
+  <tr>
+    <td>global</td>
+    <td>variable name starts with the dollar sign ($)</td>
+    <td>These variables are available throughout your entire app, overriding all scope boundaries</td>
+  </tr>
+  <tr>
+    <td>class</td>
+    <td>variable name starts with 2 @ sign (@@)</td>
+    <td>Class variables must be initialized at the class level, outside of any methods. They can then be altered using class or instance methods</td>
+  </tr>
+  <tr>
+    <td>instance</td>
+    <td>variable name starts with 1 @ sign (@)</td>
+    <td>These variables are available throughout the current instance of the parent class. Instance variables can cross some scope boundaries, but not all of them. </td>
+  </tr>
+  <tr>
+    <td>local</td>
+    <td>[a-z] or _ - only small leters or underscore "_"</td>
+    <td>most common variables you will come across and obey all scope boundaries.</td>
+  </tr>
+</table>
+    </p>
+  <h1> Scope of Variables </h1>
+    <p>
+      Each type of variable has a scope. Scope defines where in a program a variable is accessible. There are two types of pseudo-variables not mentioned before. They are nil and self. nil is assigned to an uninitialized variable and self which refers to currently executing object. For this blog, I will not be covering scope of pseudo-variables.
+    </p>
+    <p>
+     CONSTANT : The value of a constant variable remains constant for the duration of the entire program. While most programming languages do not allow you to change the value assigned to a constant, Ruby does. It will however throw a warning letting you know that there was a previous definition for that variable. Just because you can, doesn't mean you should change the value. In fact, you should not. Constants cannot be declared in methods, and are available throughout your application's. Although constants should not be changed, you can modify the internal states of the objects they reference.
+    </p>
+    <pre class="constant">
+                CONST1 = "DBC"
+                CONST2 = CONST1
+                CONST1[0] = "J" # alter string referenced by constant
+                puts CONST1 # displays JBC
+                puts CONST2 # also displays JBC
+    </pre>
+
+
+    <p>
+      GLOBAL : Global variables in Ruby are accessible from anywhere in the Ruby program, regardless of where they are declared. It is useful to know, that a number of pre-defined global variables are available to you as a Ruby developer to obtain information about the Ruby environment. A brief summary of each of these variables is contained in this <a href = "http://www.tutorialspoint.com/ruby/ruby_predefined_variables.htm">table</a>.</p>
+
+    <pre class="constant">
+                $message = "Have a great day!"
+    </pre>
+
+     <p>
+      CLASS VARIABLES: A class variable is a variable that is shared amongst all instances of a class. This means that only one variable value exists for all objects instantiated from this class. If one object instance changes the value of the variable, that new value will essentially change for all other object instances. Another way of thinking of class variables is as global variables within the context of a single class. A good way to use class variables is when the variable holds a boolean value. Check the example as below. </p>
+      <div class = "left">
+      <pre>
+        class Animal
+          @@is = true
+          @@count = 0
+          def initialize name
+            @type = name
+          end
+          def to_s
+            "This is #{@type}"
+          end
+          def does_exist?
+             @@is
+          end
+
+          def count
+             @@count += 1
+          end
+         end
+    </pre>
+    </div>
+  <div class ="center">
+      <pre>
+        b1 = Animal.new "Dog"
+        b2 = Animal.new "Cat"
+        b3 = Animal.new "Mouse"
+
+        p b1, b2, b3
+
+        p b1.does_exist?
+        p b2.does_exist?
+        p b3.does_exist?
+        p b1.count
+        p b2.count
+        p b3.count
+        p b1.count
+      </pre>
+</div>
+<div class="right">
+    <pre>
+      #output
+      #print b1, b2 b3
+      #<Animal:0x007f98ba022f88 @type="Dog">
+      #<Animal:0x007f98ba022f38 @type="Cat">
+      #<Animal:0x007f98ba022ee8 @type="Mouse">
+      #does_exit?
+        true
+        true
+        true
+      #count
+        1
+        2
+        3
+        4
+    </pre>
+  </div>
+      <p class="con"> From the above code we understand that, the first three messages are unique. The strings are stored in the instance variables of the objects. The true value is the value of the class variable, which is called three times. The count value increases by one each time it is called. </p>
+      <p>Class variables are known to have some perhaps surprising behavior when you look at inheritance. </p>
+      <pre class="constant">
+                class DemoClass
+                   @@my_var = nil
+                   def initialize
+                       @@my_var = "hello world"
+                   end
+                   def my_var
+                       puts @@my_var
+                   end
+                end
+
+                class Demo2Class < DemoClass
+                   def initialize
+                       @@my_var = "goodby world"
+                   end
+                end
+
+                demo1 = DemoClass.new
+                demo1.my_var
+                demo2 = Demo2Class.new
+                demo2.my_var
+                demo1.my_var
+
+                # Output:
+                #hello world
+                #goodbye world
+                #goodbye world
+
+      </pre>
+    <p>The change to my_var in Demo2Class has bubbled up to our base class. So it is better to avoid class variables in such cases. </p>
+    <p>
+      INSTANCE VARIABLES : An instance variable belongs to that one instance of the class. It is denoted by a single at symbol (@), and can be accessed from any instance of a class from within a method. They have private access. You can access these variables in any method inside the class.  For example if a class contains an instance variable called @count, if one instance of the object changes the current value of @count the change is local to only the object that made the change. Let us see what happens if the count variable declared as a class variable in the previous example is decalred as an instance variable.</p>
+    <div class = "left">
+    <pre>
+    class Animal
+        @@is = true
+        def initialize name
+          @type = name
+          @count = 0
+        end
+        def to_s
+          "This is #{@type}"
+        end
+        def does_exist?
+            @@is
+        end
+        def count
+            @count += 1
+        end
+    end
+    </pre>
+     </div>
+     <div class = "center">
+      <pre>
+        b1 = Animal.new "Dog"
+        b2 = Animal.new "Cat"
+        b3 = Animal.new "Mouse"
+
+        p b1, b2, b3
+
+        p b1.does_exist?
+        p b2.does_exist?
+        p b3.does_exist?
+        p b1.count
+        p b2.count
+        p b3.count
+        p b1.count
+       </pre>
+   </div>
+   <div class = "right">
+    <pre>
+        #output
+        #print b1, b2 b3
+        #<Animal:0x007f98ba022f88 @type="Dog">
+        #<Animal:0x007f98ba022f38 @type="Cat">
+        #<Animal:0x007f98ba022ee8 @type="Mouse">
+        #does_exit?
+        true
+        true
+        true
+        #count
+        1
+        1
+        1
+        2
+    </pre>
+</div>
+    <p class="con">
+      Thus we can understand from this that for each instance (b1,b2,b3) of the objects that belongs to the same class have their own local copies of the variable which are independent of changes made in any other instances.
+    </p>
+    <p>
+     LOCAL : The local variables are the normal variables, example x = 25, y = gaurish where x and y are local variables. They only exists within it's scope (block in which it is declared) They may be local to a function, or local to the class declaration, which is different than being a class variable. Locals in a class declaration go out of scope when the class declaration ends.
+    </p>
+   <p>
+   <pre class="constant">
+                 def test1
+                     var1 = 2
+                     var1.times do
+                         var2 = 3
+                         p "v1=#{var1} v2=#{var2}"
+                     end
+                   p "v1=#{var1}"
+                   p "v2=#{var2}"  # Out of scope
+                 end
+    </pre>
+    <p> As you can see in the above example, var2 was initialized witin the .times loop and as soon as it hit end var2 disappears. Hence it will throw an error as that variable cannot be accessed.
+   </p>
+   <p>
+   While I performed some Object Oriented Concepts this week I struggled most in trying to identify when and where to use these different variables. It was easy to identify what these variables do, but the conditions in which they are used was a huge confusion. Reading though material in order to write this blog helped immensely. hope this set of information is worth it.
+   </p>
+   <p>HAPPY CODING! </p>
+
+</section>
+</main>
+ <br><footer>
+
+      <ul>
+      <li><a href="https://www.facebook.com/nruthya"><img src="http://codingnutty.github.io/imgs/facebook-square.png"id="facebook">
+      </a></li>
+      <li><a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile"><img src="http://codingnutty.github.io/imgs/linkedin.png" id="linkdin"/>
+      </a></li>
+      <li><a href="https://twitter.com/Nutty2687?lang=en"><img src="http://codingnutty.github.io/imgs/twitter.png" id="twitter"/>
+      </a></li>
+      <li><a href="https://github.com/codingnutty"><img src="http://codingnutty.github.io/imgs/github.png" id ="github"/></a></li>
+      <li><a href="https://instagram.com/nruthy2687"><img src="http://codingnutty.github.io/imgs/instagram.png" id ="instagram"/>
+      </a></li>
+      <li><a href="mailto:nruthy2687@gmail.com"><img src="http://codingnutty.github.io/imgs/mail.png" id="email"/></a></li>
+      </footer>
+</body>
+</html>

@@ -38,6 +38,9 @@ div a{
   color:#4A148C;
   text-decoration: none;
 }
+a:hover {
+    text-shadow: 0 0 10px #35404f;
+}
 
 article{
  /* border:6px groove black;*/

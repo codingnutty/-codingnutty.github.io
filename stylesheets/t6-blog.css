@@ -1,0 +1,43 @@
+table, th, td {
+   border: 1px solid black;
+   padding: 8px;
+}
+
+body .constant{
+    font-family: 'Inconsolata';
+/*    display:inline-block;*/
+    position:relative;
+    width : 42em;
+   }
+
+   body .left{
+    font-family: 'Inconsolata';
+    width : 20em;
+    margin-left:-7em;
+    margin-right:40em;
+    position:relative;
+   }
+
+   body .center{
+    font-family: 'Inconsolata';
+    width : 20em;
+    margin-top:-30em;
+    margin-left:15em;
+    margin-right:-10em;
+    position:relative;
+
+   }
+   body .right{
+    font-family: 'Inconsolata';
+    width : 20em;
+    margin-top:-27em;
+    margin-left:37em;
+    margin-right:10em;
+    position:relative;
+
+   }
+
+  body .con{
+  position:relative;
+  margin-top:8em;
+}

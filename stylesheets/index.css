@@ -1,4 +1,6 @@
-
+a:hover {
+    text-shadow: 0 0 10px #35404f;
+}
 body{
     background :url("http://codingnutty.github.io/imgs/bg.jpg?raw=true");
     background-size: cover;
