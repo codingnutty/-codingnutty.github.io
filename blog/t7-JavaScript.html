@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<head>
+  <title>t7-JavaScript-blog</title>
+  <meta charset="UTF-8">
+  <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/t7-blog.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html"><h1>Nruthya L</h1></a>
+        <ul>
+          <li><a href ="../aboutme.html">About Me</a></li>
+          <li><a href="../resume.html">Resume</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../blog_index.html">Blog</a></li>
+          <li><a href="../getintouch.html">Get In Touch</a></li>
+        </ul>
+
+     </header>
+<main>
+  <h2>Ruby Versus JavaScript</h2>
+  <h2>Looping</h2>
+  <h4>July 31,2015</h4>
+
+  <section id="content">
+    <p>
+      Comparing structures and functioning of different programming languages is always interesting. One can accomplish the same output in 2 completely different languages. @ such very different programming languages are Ruby and JavaScript. Ruby is usually applicable at server-side and JavaScript is for web functionality, more for client-side.
+    </p>
+    <p> Today, I will be writing about looping in these 2 different languages. Ruby has many in- built functions and iterators and enumerators that aid programming. Considering JavaScript and Ruby are two languages that have different purposes, It’s cool to see that there are things you can do just as well with either language, like iteration. </p>
+
+    <p>Loops are a common part of every programming language. They allow a program to repeat the same action a set number of times or until a specified condition is met. Loops are an essential part of keeping your code DRY.</p>
+
+    <p> Let us consider an example in both these languges. We want to multiply every number between 1 to 100 by 5.</p>
+
+    <h1> JAVASCRIPT </h1>
+                     <pre class="constant">
+                     for (var i = 1; i < 101; i++) {
+                         console.log(i*5);}
+                     </pre>
+     <h1> RUBY </h1>
+                     <pre class="constant">
+                     100.times do |i|
+                         puts (i + 1)*5
+                     end
+                     </pre>
+
+    <p>
+      In the above examples, we can seethat JavaScript declares its parameter in a more explicit manner versus Ruby where parameters declarations are inside of the loop. </p>
+
+      <p>In Javascript the parameters are declared by specifying the "state of the variable"(var i = 1), "condition that is to be condidered for iterating through loop"(i < 101) and "iterator increment(i++)". </p>
+      <p>The same thing in ruby is taken care by .times operator. The state of the variable is declared inside the loop after do within "||" and it defaults to 0, "the condition is by mentioning the number of times one wants the code to loop (100)" and "iteration increment" is done by times itself.
+      </p>
+    <p>
+     EACH LOOP : Both the languages can iterate using an each loop as well. The each loop seems more literal and expressive where it says it iterates through each element and performs a certain modfication to each of them.
+    </p>
+    <h1> JAVASCRIPT </h1>
+                     <pre class="constant">
+                     multiply = 1;
+                     var arr = [1,2,3,4,5];
+                     forEach(arr, function(n) {
+                         numtiply *= n;
+                      });
+                     console.log(multiply);
+                     === > 120
+    </pre>
+    <h1> RUBY </h1>
+                     <pre class="constant">
+                     multiply = 1
+                     var arr = [1,2,3,4,5]
+                     arr.each {|n| multiply *= n}
+                     puts multiply
+                     === > 120
+                     </pre>
+
+                     or
+
+                     <pre class="constant">
+                     multiply = 1
+                     var arr = [1,2,3,4,5]
+                     arr.each do |n|
+                         multiply *= n
+                     end
+                     puts multiply
+                     === > 120
+                     </pre>
+    <p> As you can see in the above example, in both languages the each iterator loops over the array and performs the function. Although in javascript, using forEach method on object literals(obj ={}) would not be prefered to iterate over its properties as it complicated the iteration and the for..of or for loop will be prefered for it. for...in iterates over property names, for...of iterates over property values.
+   </p>
+   <p>
+   WHILE LOOP : If one wants to create a loop until a specific condition is met the while keyword is used. This is a very simple and common loop, do something until a condition evaluates to false. Lets us use an example to understand this better. The following loop will continue as long as the variable is less than or equal to 3.:
+   </p>
+   <h1> JAVASCRIPT </h1>
+                    <pre class="constant">
+                    var n = 1;
+
+                    while (n <= 3) {
+                        console.log(“I love JavaScript!”);
+                        n += 1
+                    }
+                    </pre>
+   <h1> RUBY </h1>
+                    <pre class="constant">
+                    i = 0
+                    while i < 3
+                       p “I love Ruby!”
+                       i += 1
+                    end
+    </pre>
+    <p>
+     In this loop before every iteration, the conditional statement is tested. If it is true, the loop runs again. If it is false, the loop stops.
+     </p>
+     <p>
+      OTHER LOOPING METHODS :  Well ruby has some cool built-in methods like inject, map, select and javascript just performs the same functions but in a very different manner.
+      The ruby methods make iterating and manipulations to hashes or arrays very easy.
+     </p>
+    <h1> JAVASCRIPT </h1>
+                     <pre class="constant">
+                     sum = 0
+                     array = [1,2,4,6]
+                     for (i in array) { sum += array[i]} => 13
+                     </pre>
+     <h1> RUBY </h1>
+                     <pre class="constant">
+                     array = [1,2,4,6]
+
+                     array.inject{ |sum, num| sum + num} => 13
+                     </pre>
+     </p>
+     <p>
+      This was a small comaprison between looping in both languages. As we now udnerstand that both languages can perform similar tasks in their own ways yet efficiently. Ruby seems more readable while JavaScript is more elaborate in its working. Hopefully you have a little better understanding after reading this post.
+     </p>
+   <p>Thank you for Reading. HAPPY CODING! </p>
+
+</section>
+</main>
+ <br><footer>
+
+      <ul>
+      <li><a href="https://www.facebook.com/nruthya"><img src="http://codingnutty.github.io/imgs/facebook-square.png"id="facebook">
+      </a></li>
+      <li><a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile"><img src="http://codingnutty.github.io/imgs/linkedin.png" id="linkdin"/>
+      </a></li>
+      <li><a href="https://twitter.com/Nutty2687?lang=en"><img src="http://codingnutty.github.io/imgs/twitter.png" id="twitter"/>
+      </a></li>
+      <li><a href="https://github.com/codingnutty"><img src="http://codingnutty.github.io/imgs/github.png" id ="github"/></a></li>
+      <li><a href="https://instagram.com/nruthy2687"><img src="http://codingnutty.github.io/imgs/instagram.png" id ="instagram"/>
+      </a></li>
+      <li><a href="mailto:nruthy2687@gmail.com"><img src="http://codingnutty.github.io/imgs/mail.png" id="email"/></a></li>
+      </footer>
+</body>
+</html>
