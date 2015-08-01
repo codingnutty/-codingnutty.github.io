@@ -1,0 +1,35 @@
+body{
+  background :url("http://codingnutty.github.io/imgs/bg.jpg?raw=true");
+  background-size:cover;
+}
+
+body h3{
+  font-size:30px;
+}
+
+body .projectpage{
+  height: 60em;
+
+}
+
+section #description{
+  text-align: center;
+}
+
+.project {
+  margin: 10px 15em 10px 10em;
+  width: 40%;
+  float: left;
+  line-height: 0.7;
+}
+
+
+div a{
+  font-family: 'Indie Flower', cursive;
+  font-size:30px;
+  color:#4A148C;
+  text-decoration: none;
+}
+a:hover {
+    text-shadow: 0 0 10px #35404f;
+}
