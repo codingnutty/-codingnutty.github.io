@@ -1,0 +1,36 @@
+section {
+  margin-left: 15em;
+  margin-right:15em;
+}
+
+details p{
+  text-align:center;
+  font-size: 0.8em;
+}
+summary{
+  text-align: center;
+  color:#4A148C;
+  font-size: 22px;
+}
+
+section li{
+  font-size: 26px;
+  color:#4A148C;
+  margin-left:10%;
+  margin-right:10%;
+}
+section a{
+  /*font-family: 'Indie Flower', cursive;*/
+  font-family: 'EB Garamond', serif;
+  color:#4A148C;
+}
+h3{
+color:black;
+text-align:center;
+font-size: 28px;
+}
+body .outer{
+  border:2px solid #BDBDBD;
+  border-style:inset;
+  border-color:#262626;
+}
