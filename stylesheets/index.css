@@ -2,66 +2,79 @@ a:hover {
     text-shadow: 0 0 10px #35404f;
 }
 body{
-    background :url("http://codingnutty.github.io/imgs/bg.jpg?raw=true");
+    /*background :url("http://codingnutty.github.io/imgs/bg.jpg?raw=true");*/
+    background: url("http://pdccapitalgroup.com/wp-content/uploads/2014/01/San-Francisco-Golden-Gate-Bridge.jpg?raw=true");
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    text-align: center;
+    color: black;
+    }
 
-}
+
 /* Header */
 header {
-  /*background-color: black;*/
- /* opacity:0.4;*/
-  height: 70px;
+  /*background: url("http://codingnutty.github.io/imgs/header1.jpg?raw=true");*/
+  height: 50px;
   -moz-box-shadow: 0 0 10px #35404f;
   -webkit-box-shadow: 0 0 10px #35404f;
   box-shadow: 0 0 10px #35404f;
-  font-family: 'EB Garamond', serif;
+  font-family: 'Dancing Script', cursive;
 }
 
-header ul {
-  list-style-type: none;
-  float:right;
-  margin: 40px 15px 0px 0px;
+ ul {
+  margin-left:-16em;
   font-size:20px;
-}
-
-header li {
-  display:inline-block;
-  margin-left: 15px;
-}
-
-header a {
   text-decoration: none;
-  color: #263238;
+  list-style-type: none;
+}
+
+#links li {
+  display: inline-block;
+  font-family: 'Dancing Script', cursive;
+  position: relative;
+  font-size:22px;
+  padding-right: 40px;
+  margin-top:18px;
+}
+
+#links a{
+  text-decoration: none;
+  list-style-type: none;
+  color: #BF360C;
 }
 
 
 header h1 {
-  display: inline-block;
+  font-family: 'Dancing Script', cursive;
   color: #263238;
-  margin-left: 10px;
+  margin-top:8px;
+  margin-left:1.7em;
   font-size:30px;
+  position:absolute;
 }
 
 /*body*/
 
-.main img {
-  float: left;
-  margin-left: 0px;
-  width:80%;
-  padding-top:30px;
-}
-
-.left {
-  float: left;
-  width: 40%;
-}
-
-.right {
-  float: right;
-  width: 50%;
+section img {
+  position:relative;
+  margin-left: -30em;
   margin-top:5em;
-  text-align:justify;
+  width:16%;
+  border-radius: 10%;
+  border-image:1px solid red;
+  image-position:center;
+}
+section p {
+    font-size: 22px;
+  }
+
+#right {
+position:relative;
+  width: 50%;
+  margin-left: 5em;
+  margin-top:50px;
+  text-align:center;
 }
 
 section {
@@ -75,15 +88,7 @@ section {
 footer {
   clear:both;
   width:100%;
-}
-
-footer h3 {
-  color: black;
-  font-family: 'EB Garamond', serif;
-  margin: 5px auto auto 5px;
-  font-size:30px;
-  text-align: center;
-
+  margin-left:-17em;
 }
 
 footer ul {
@@ -98,9 +103,15 @@ footer li {
 footer img {
   margin: auto 15px 10px 15px;
   float:none;
+  height:3em;
+  width:3em;
 }
 
 footer p {
   text-align: center;
-  color: #7acccc;
-}
+  color: #BF360C;
+  margin-left:0em;
+  font-family: 'EB Garamond', serif;
+  font-size:30px;
+
+ }

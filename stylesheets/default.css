@@ -12,48 +12,52 @@ a:hover {
 
 /* Header */
 
-header ul {
-  list-style-type: none;
-  float:right;
-  margin: 40px 15px 0px 0px;
+header {
+  /*background: url("http://codingnutty.github.io/imgs/header1.jpg?raw=true");*/
+  height: 50px;
+  -moz-box-shadow: 0 0 10px #35404f;
+  -webkit-box-shadow: 0 0 10px #35404f;
+  box-shadow: 0 0 10px #35404f;
+  font-family: 'Dancing Script', cursive;
+}
+
+ ul {
+  margin-left:10em;
   font-size:20px;
-  font-family: 'EB Garamond', serif;
-}
-
-
-header li {
-  display:inline-block;
-  margin-left: 15px;
-}
-
-header a {
   text-decoration: none;
-  color: #263238;
+  list-style-type: none;
+}
+
+#links li {
+  display: inline-block;
+  font-family: 'Dancing Script', cursive;
+  position: relative;
+  font-size:22px;
+  padding-right: 40px;
+  margin-top:18px;
+}
+
+#links a{
+  text-decoration: none;
+  list-style-type: none;
+  color: #BF360C;
 }
 
 
 header h1 {
-  display: inline-block;
+  font-family: 'Dancing Script', cursive;
   color: #263238;
-  margin-left: 10px;
+  margin-top:8px;
+  margin-left:1.7em;
   font-size:30px;
-  font-family: 'EB Garamond', serif;
+  position:absolute;
 }
-
-header {
-  background: url("http://codingnutty.github.io/imgs/header1.jpg?raw=true");
-
-
-  height: 90px;
-  width:cover;
-  -moz-box-shadow: 0 0 10px #35404f;
-  -webkit-box-shadow: 0 0 10px #35404f;
-  box-shadow: 0 0 10px #35404f;
-  font-family: 'EB Garamond', serif;
-}
-
 
 /*body*/
+body{
+  background :url("http://static.tumblr.com/f5e9633c784580d7a3ebc2a163e7bf4b/v6jnbu8/wmKmqvcoc/tumblr_static_more-tumblr-backgrounds-for-guys-light-gray_-_kopie.jpg?raw=true");
+  background-size:cover;
+}
 
 section {
   font-size: 18px;
@@ -69,9 +73,9 @@ section {
 /* Footer */
 
 footer {
-
   clear:both;
   width:100%;
+  margin-left:30em;
 }
 
 footer h3 {
@@ -93,11 +97,8 @@ footer li {
 footer img {
   margin: auto 15px 10px 15px;
   float:none;
-}
-
-footer p {
-  text-align: center;
-  color: #7acccc;
+  height:3em;
+  width:3em;
 }
 
 
