@@ -13,7 +13,6 @@ a:hover {
 /* Header */
 
 header {
-  /*background: url("http://codingnutty.github.io/imgs/header1.jpg?raw=true");*/
   height: 50px;
   -moz-box-shadow: 0 0 10px #35404f;
   -webkit-box-shadow: 0 0 10px #35404f;
@@ -56,7 +55,9 @@ header h1 {
 /*body*/
 body{
   background :url("http://codingnutty.github.io/imgs/background-grey.jpg?raw=true");
-  background-size:cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 section {
