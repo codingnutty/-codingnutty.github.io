@@ -1,15 +1,40 @@
 main h2{
   font-size:28px;
-  text-align:center;
+  text-align:left;
 }
 main h4{
   font-size:18px;
-  text-align:center;
+  text-align:left;
 }
 #content{
+    float:left;
+    width: 40em;
     text-align: justify;
     font-size: 20px;
     line-height: 1cm;
-    margin-left: 10em;
-    margin-right:10em;
+    margin-left: 0em;
+    margin-right:30em;
+    display:inline-block;
+}
+
+#relatedlinks{
+
+  display:inline-block;
+  width:18em;
+
+  position:absolute;
+  margin-left:55em;
+  padding-left: 10px;
+  border-left:3px solid #E53935;
+}
+
+section #relatedlinks a{
+  line-height: 0.6cm;
+}
+
+#heading {
+  position:absolute;
+  margin-top:-2em;
+  margin-left: 36em ;
+  text-decoration: underline;
 }
